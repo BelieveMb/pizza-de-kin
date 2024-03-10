@@ -9,7 +9,7 @@ function Header() {
             <span className="text-2xl">
                 <i className="bi bi-menu-app-fill"></i>
             </span>
-            <div className="flex  items-center gap-2">
+            <div className="hidden lg:flex  items-center gap-2">
                 <span className="text-2xl text-green-500">
                     <i className="bi bi-telephone"></i>
                 </span>
@@ -32,18 +32,18 @@ function Header() {
         </div>
 
         <div className='flex flex-row items-center gap-5 '>
-            <span className="text-sm text-gray-50">
+            <span className="hidden text-sm text-gray-50 lg:flex items-baseline">
                 <i className="bi bi-search text-xl"></i> 
                 Recherche
             </span>
-            <button className='bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold flex gap-1'>
+            <button className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  '>
               <i className="bi bi-cart4"></i> 
               Commander
             </button>
             <button className='bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold'>
               <i className="bi bi-basket2"></i> 
             </button>
-            <button className='text-xl text-gray-50 font-semibold'>
+            <button className='hidden lg:flex text-xl text-gray-50 font-semibold'>
               <i className="bi bi-ui-radios-grid"></i> 
             </button>
 
