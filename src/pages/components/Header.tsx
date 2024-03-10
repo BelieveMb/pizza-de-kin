@@ -5,7 +5,7 @@ import Image from 'next/image'
 function Header() {
   return (
     <header className='p-[2rem] flex flex-row justify-between items-center'>
-        <div className='flex flex-row items-center gap-5 border-4 border-green-400'>
+        <div className='flex flex-row items-center gap-5 '>
             <span className="text-2xl">
                 <i className="bi bi-menu-app-fill"></i>
             </span>
@@ -19,6 +19,7 @@ function Header() {
                 </div>
             </div>
         </div>
+
         <div >
             <Image 
                 src='./images/logo.svg'
@@ -29,8 +30,23 @@ function Header() {
                 priority
             />
         </div>
-        <div className='w-20 border-4 border-green-400'>
-            <h2>Block 3</h2>
+
+        <div className='flex flex-row items-center gap-5 '>
+            <span className="text-sm text-gray-50">
+                <i className="bi bi-search text-xl"></i> 
+                Recherche
+            </span>
+            <button className='bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold flex gap-1'>
+              <i className="bi bi-cart4"></i> 
+              Commander
+            </button>
+            <button className='bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold'>
+              <i className="bi bi-basket2"></i> 
+            </button>
+            <button className='text-xl text-gray-50 font-semibold'>
+              <i className="bi bi-ui-radios-grid"></i> 
+            </button>
+
         </div>
     </header>
   )
