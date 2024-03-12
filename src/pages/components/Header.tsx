@@ -10,7 +10,7 @@ const HeaderBar = (
     return (
         <>
             {showSideBar ? <SideBar sideBarAction={sideBarAction} /> : null }
-            <header className='p-[2rem] flex flex-row justify-between items-center'>
+            <header className='flex flex-row justify-between items-center'>
                 <div className='flex flex-row items-center gap-5 cursor-pointer'>
                     <span className="text-2xl" onClick={sideBarAction}>
                         <i className="bi bi-menu-app-fill"></i>
