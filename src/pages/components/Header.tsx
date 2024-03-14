@@ -15,6 +15,7 @@ const HeaderBar = (
                     <span className="text-2xl" onClick={sideBarAction}>
                         <i className="bi bi-menu-app-fill"></i>
                     </span>
+
                     <div className="hidden lg:flex  items-center gap-2">
                         <span className="text-2xl text-green-500">
                             <i className="bi bi-telephone"></i>
