@@ -12,14 +12,14 @@ const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}
         boutonText: string
     }) => {
     return (
-        <aside className='my-[5rem] flex flex-row gap-4 justify-between content-start items-start'>
-            <div className="w-[50%] flex flex-col justify-center content-center items-center text-center">
-                <h2 className='text-3xl text-yellow-400 uppercase'>{sousTitle} </h2>
-                <h1 className='text-[4rem] font-bold text-center uppercase leading-none'>{title} </h1>
-                <p className='mt-4 px-10 py-8'>
+        <aside className=' my-10 lg:my-[5rem] flex lg:flex-row flex-col gap-4 lg:justify-between justify-center content-start items-start'>
+            <div className="w-full lg:w-[50%] py-10 lg:p-0 flex flex-col justify-center content-center items-center text-center">
+                <h2 className='text-xl lg:text-3xl text-yellow-400 uppercase mb-5 sous-title-font-bold'>{sousTitle} </h2>
+                <h1 className='title-font-regular text-5xl lg:text-[5rem] text-center uppercase leading-snug lg:leading-none'>{title} </h1>
+                <p className='mt-2 lg:mt-4 px-10 py-8 para-font-regular'>
                     {contentText}
                 </p>
-                <button className='hidden lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>
+                <button className='.btn-font-regular lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>
                     {boutonText} <i className="bi bi-arrow-right"></i> 
                 </button>
             </div>  
@@ -27,7 +27,7 @@ const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}
                 <Image 
                     src='/images/discount.jpg'
                     alt="discount image"
-                    className={`rounded-full  z-20 absolute right-[35rem] top-20 transition-transform duration-500 ${isImageExpanded ? 'transform scale-50' : 'transform scale-100'}`}
+                    className={` hidden lg:block rounded-full  z-20 absolute right-[35rem] top-20 transition-transform duration-500 ${isImageExpanded ? 'transform scale-50' : 'transform scale-100'}`}
                     width={150}
                     height={30}
                     priority
@@ -64,7 +64,7 @@ function HeroSection() {
 
 
   return (
-    <section className='flex flex-col'>
+    <section className='para-font-regular flex flex-col'>
         { changeAside === 1 ?
             <HeroContent  
                 isImageExpanded={isImageExpanded}
