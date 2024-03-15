@@ -3,12 +3,12 @@ import React from 'react'
 function ProductImage() {
   return (
     <section className="flex flex-col lg:flex-row  cursor-pointer">
-        <div  className="flex flex-col  justify-center gap-4 px-14  bg-center bg-cover bg-no-repeat w-full lg:w-1/2 h-[36rem]
+        <div  className="flex flex-col  justify-center gap-4 px-14  bg-center bg-cover bg-no-repeat w-full h-[22rem] lg:h-[36rem]
                 relative overflow-hidden transform transition-transform duration-700 hover:scale-110  hover:z-0 " 
-            style={{ backgroundImage: "url('./images/fast-food.jpg')" , maxWidth: '50%'}}>
+            style={{ backgroundImage: "url('./images/fast-food.jpg')" }}>
                 <h2 className='text-xl text-yellow-400  sous-title-font-bold'>Offre spécial </h2>
-                <h1 className='w-[80%] title-font-regular text-5xl  uppercase leading-snug lg:leading-none'>Pizza Grand Format </h1>
-                <h2 className='text-xl mb-2 sous-title-font-bold'>à seulement <span className="text-3xl text-yellow-400">15 $</span> </h2>
+                <h1 className='w-[60%] lg:w-[80%] title-font-regular text-3xl lg:text-5xl  uppercase leading-snug lg:leading-none'>Pizza Grand Format </h1>
+                <h2 className='text-xl mb-6 lg:mb-2 sous-title-font-bold'>à seulement <span className="text-3xl text-yellow-400">15 $</span> </h2>
                 <div>
                     <button className='.btn-font-regular lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>
                         Commander <i className="bi bi-arrow-right"></i> 
