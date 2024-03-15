@@ -23,7 +23,7 @@ const HeroContent = ({isImageExpanded, title,sousTitle, contentText, boutonText}
                     {boutonText} <i className="bi bi-arrow-right"></i> 
                 </button>
             </div>  
-            <div className="flex flex-col content-start items-start border-4 border-red-300">
+            <div className="flex flex-col content-start items-start ">
                 <Image 
                     src='/images/discount.jpg'
                     alt="discount image"

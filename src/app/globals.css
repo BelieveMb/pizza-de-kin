@@ -49,6 +49,12 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+.scrolling-image {
+  position: sticky;
+  top: 0;
+  transform: translateY(calc(-50vh + 50%)); /* Déplace l'image de moitié de la hauteur de la vue vers le haut */
+}
+
 
 @layer utilities {
   .text-balance {
