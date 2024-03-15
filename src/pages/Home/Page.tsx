@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import ProductImage from '../components/ProductImage'
 import Event from '../components/Event'
+import PizzaSection from '../components/PizzaSection'
 
 function Page() {
   return (
@@ -18,6 +19,7 @@ function Page() {
         </div>
         <ProductImage />
         <Event />
+        <PizzaSection />
 
     
     </main>
