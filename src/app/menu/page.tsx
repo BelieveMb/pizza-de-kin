@@ -2,6 +2,8 @@ import React from 'react';
 import Header from '@/components/Header';
 import BannerTitle from '@/components/BannerTitle';
 import ListDish from '@/components/ListDish';
+import MenuPrice from '@/components/MenuPrice';
+import Footer from '@/components/Footer';
 
 function Page() {
   return (
@@ -11,6 +13,8 @@ function Page() {
       </div>
       <BannerTitle />
       <ListDish />
+      <MenuPrice />
+      <Footer />
     </main>
   )
 }
