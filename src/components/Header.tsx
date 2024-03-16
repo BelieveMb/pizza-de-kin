@@ -2,7 +2,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { usePathname } from 'next/navigation';
+// import clsx from 'clsx';
 
 const HeaderBar = (
      {searchAction, sideBarAction, showSideBar}:
@@ -77,6 +78,7 @@ const BarSearch = ({searchAction}: {searchAction:any}) => {
 }
 
 const SideBar = ({sideBarAction}: {sideBarAction:any}) => {
+    const pathname = usePathname();
     return (
         <div className=' transition duration-1000 ease-in-out bg-gray-50 w-[25%] h-[50rem] absolute left-0 top-0 z-10 py-6 px-5 '>
             <div className='flex justify-end content-end'>
@@ -103,10 +105,11 @@ const SideBar = ({sideBarAction}: {sideBarAction:any}) => {
                 </div>
 
                 <div className="flex flex-col gap-2 font-bold my-8 text-[0.8rem] ">
-                    <a href="#" className='hover:text-gray-600 hover:delay-700 text-red-500 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <a href="./" className='hover:text-gray-600 hover:delay-700 text-red-500 uppercase flex flex-row justify-between content-baseline items-center'>
                         <span>Accueil </span>
                         <i className="bi bi-house text-2xl"></i>
                     </a>
+                    
                     <Link href='./menu'  className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Menu </span>
                         <i className="bi bi-house text-2xl"></i>
