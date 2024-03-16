@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const HeaderBar = (
@@ -106,12 +107,12 @@ const SideBar = ({sideBarAction}: {sideBarAction:any}) => {
                         <span>Accueil </span>
                         <i className="bi bi-house text-2xl"></i>
                     </a>
-                    <a href="#" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
-                        <span>Home </span>
-                        <i className="bi bi-house text-2xl"></i>
-                    </a>
-                    <a href="#" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <Link href='./menu'  className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Menu </span>
+                        <i className="bi bi-house text-2xl"></i>
+                    </Link>
+                    <a href="#" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                        <span>AA </span>
                         <i className="bi bi-house text-2xl"></i>
                     </a>
                     <a href="#" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>

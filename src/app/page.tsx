@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Page from "@/pages/Home/Page";
+import Index from "@/app/Index";
 
 export default function Home() {
   return (
     <>
-      <Page />
+      <Index />
 
     </>
   );
