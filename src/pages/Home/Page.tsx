@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection'
 import ProductImage from '../components/ProductImage'
 import Event from '../components/Event'
 import PizzaSection from '../components/PizzaSection'
+import MenuPrice from '../components/MenuPrice'
 
 function Page() {
   return (
@@ -20,7 +21,7 @@ function Page() {
         <ProductImage />
         <Event />
         <PizzaSection />
-
+        <MenuPrice />
     
     </main>
     
