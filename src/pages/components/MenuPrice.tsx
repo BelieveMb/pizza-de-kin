@@ -19,11 +19,11 @@ const PriceItem = ({product, price, detail} : {
 
 function MenuPrice() {
   return (
-    <section className="py-10  flex flex-row lg:flex-col  justify-center gap-2   bg-gray-100 text-gray-800 h-auto " >
+    <section className="pt-10  flex flex-row lg:flex-col  justify-center gap-2   bg-gray-100 text-gray-800 h-auto " >
       <div className="flex flex-col lg:flex-row justify-between px-20">
         <div className="flex flex-col justify-start">
             <h4 className='text-sm  text-red-500 sous-title-font-bold mb-2'>Explorer nos repas spéciaux </h4>
-            <h2 className='title-font-regular text-3xl lg:text-[4rem] uppercase w-[40rem] leading-[3rem] '>WE LOVE TO SURPRISE YOU </h2>
+            <h2 className='title-font-regular text-3xl lg:text-[4rem] uppercase w-[40rem] leading-[3rem] '>WE LOVE You SURPRISE YOU </h2>
         </div>
         <Image 
             src='/images/pizzaimg.png'

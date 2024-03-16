@@ -5,6 +5,7 @@ import ProductImage from '../components/ProductImage'
 import Event from '../components/Event'
 import PizzaSection from '../components/PizzaSection'
 import MenuPrice from '../components/MenuPrice'
+import Footer from '../components/Footer'
 
 function Page() {
   return (
@@ -22,6 +23,7 @@ function Page() {
         <Event />
         <PizzaSection />
         <MenuPrice />
+        <Footer />
     
     </main>
     
