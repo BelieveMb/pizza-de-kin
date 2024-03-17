@@ -80,7 +80,7 @@ const BarSearch = ({searchAction}: {searchAction:any}) => {
 const SideBar = ({sideBarAction}: {sideBarAction:any}) => {
     const pathname = usePathname();
     return (
-        <div className=' transition duration-1000 ease-in-out bg-gray-50 w-[25%] h-[50rem] absolute left-0 top-0 z-10 py-6 px-5 '>
+        <div className=' transition duration-1000 ease-in-out bg-gray-50 w-[65%] lg:w-[25%] h-[50rem] absolute left-0 top-0 z-10 py-6 px-5 '>
             <div className='flex justify-end content-end'>
                 <span className="text-4xl text-gray-950 hover:text-red-500 cursor-pointer" onClick={sideBarAction} >
                     <i className="bi bi-x"></i>
@@ -114,8 +114,8 @@ const SideBar = ({sideBarAction}: {sideBarAction:any}) => {
                         <span>Menu </span>
                         <i className="bi bi-house text-2xl"></i>
                     </Link>
-                    <a href="#" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
-                        <span>AA </span>
+                    <a href="./reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                        <span>Réservation </span>
                         <i className="bi bi-house text-2xl"></i>
                     </a>
                     <a href="#" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
