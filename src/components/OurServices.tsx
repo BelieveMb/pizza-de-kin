@@ -15,20 +15,20 @@ const ServiceCard = ({imgName, title, contentPara}:
                     height={20}
                 /> 
             </div>
-            <h3 className='title-font-regular text-xl lg:text-[1.5rem] uppercase '> {title} </h3>
-            <p className='px-10 text-center'> {contentPara}            </p>
+            <h3 className='btn-font-regular text-xl lg:text-[1.5rem] uppercase '> {title} </h3>
+            <p className='px-10 text-center'> {contentPara}</p>
         </div>
     )
 }
 
 function OurServices() {
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center py-[8%] px-10 bg-gray-400  " >
-        <ServiceCard title='Quality Foods' 
+    <section className="flex flex-col lg:flex-row justify-center items-center pb-20 " >
+        <ServiceCard title='Repas qualité' 
             contentPara='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam id natus nobis!' 
             imgName='fastfood.svg'
         />
-        <ServiceCard title='Quality Foods' 
+        <ServiceCard title='Plat spécial ' 
             contentPara='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam id natus nobis!' 
             imgName='pizza.svg'
         />

@@ -19,7 +19,7 @@ const HeaderBar = (
                     </span>
 
                     <div className="hidden lg:flex  items-center gap-2">
-                        <span className="text-2xl text-green-500">
+                        <span className="text-2xl text-green-800">
                             <i className="bi bi-telephone"></i>
                         </span>
                         <div className="flex flex-col">
