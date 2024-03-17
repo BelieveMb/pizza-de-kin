@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 function Footer() {
   return (
-    <footer className="flex flex-row justify-between gap-5 bg-gray-900 px-[2rem] py-20">
-        <div className="flex flex-col gap-2 justify-start w-[33%] ">
+    <footer className="flex flex-col lg:flex-row items-center lg:items-baseline justify-between gap-5 bg-gray-900 px-[2rem] py-20">
+        <div className="flex flex-col gap-2 items-center lg:items-start lg:justify-start w-full lg:w-[33%] ">
             <div>
                 <Image 
                     src='/images/logo.svg'
@@ -15,15 +15,15 @@ function Footer() {
                     height={30}
                 /> 
             </div>
-            <p className='w-full lg:w-[20rem] '> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-            <div className="flex flex-col justify-start">
+            <p className='w-[15rem] lg:w-[20rem]  text-center lg:text-left'> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <div className="flex flex-col justify-start items-center lg:items-start">
                 <p> <a href="mailto:mbolokobelieve@gmail.com">support@example.com</a></p>
                 <p> <a href="tel:+243817723066">+243 817 723 066</a></p>
 
             </div>
         </div>
 
-        <div className="flex flex-col gap-2 justify-start w-[33%] ">
+        <div className="flex flex-col gap-2 justify-start items-center lg:items-start  w-full lg:w-[33%] ">
             <h4 className='text-xl  sous-title-font-bold mb-2'>Nos produits</h4>
             <ul className="flex flex-col justify-start">
                 <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Pizza Inn 1</a>
@@ -33,7 +33,7 @@ function Footer() {
             </ul>
         </div>
 
-        <div className="flex flex-col gap-2 justify-start w-[33%] ">
+        <div className="flex flex-col gap-2 justify-start items-center lg:items-start w-full lg:w-[33%] ">
             <h4 className='text-xl  sous-title-font-bold mb-2'>Liens rapides</h4>
             <ul className="flex flex-col justify-start">
                 <a href="#" className='hover:text-red-500 duration-500 font-semibold text-gray-400'>Link 1</a>
@@ -44,7 +44,7 @@ function Footer() {
         </div>
 
      
-        <div className="flex flex-col gap-2 justify-start w-[33%] border-l-2 border-gray-400 pl-10">
+        <div className="flex flex-col gap-2 justify-start items-center lg:items-start  w-full lg:w-[33%] border-none lg:border-l-2 border-gray-400 pl-10">
             <h4 className='text-xl  sous-title-font-bold mb-2'>Heures d'ouverture</h4>
             <div className="flex flex-col justify-start text-gray-100 font-medium">
                 <span > Lundi - Vendredi : <span className="text-red-500">8h - 21h</span> </span>
