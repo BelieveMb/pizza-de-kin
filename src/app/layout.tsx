@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <head>
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com"  />
         <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Merriweather:ital,wght@0,400;1,700&family=Mooli&family=Rozha+One&display=swap" rel="stylesheet" />
