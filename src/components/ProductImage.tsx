@@ -8,7 +8,7 @@ function ProductImage() {
                 relative overflow-hidden transform transition-transform duration-700 hover:scale-110  hover:z-0 " 
             style={{ backgroundImage: "url('./images/fast-food.jpg')" }}>
                 <h2 className='text-xl text-yellow-400  sous-title-font-bold'>Offre spécial </h2>
-                <h1 className='w-[60%] lg:w-[80%] title-font-regular text-3xl lg:text-5xl  uppercase leading-snug lg:leading-none'>Super Pizza Max </h1>
+                <h1 className='w-[60%] lg:w-[80%] title-font-regular text-3xl lg:text-5xl  uppercase leading-snug lg:leading-none'>Super Pizza Air </h1>
                 <h2 className='text-xl mb-6 lg:mb-2 sous-title-font-bold'>à seulement <span className="text-3xl text-yellow-400">13 $</span> </h2>
                 <div className=' '>
                     <Link href='./shop/product' className='lg:w-[20%] btn-font-regular lg:flex gap-1 bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-red-500 duration-700 '>
