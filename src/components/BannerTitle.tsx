@@ -1,7 +1,7 @@
 import React from 'react'
 
-function BannerTitle({title, menu}:
-  {title:string, menu:string}) {
+function BannerTitle({title, menu, secondMenu}:
+  {title:string, menu:string, secondMenu:string}) {
   return (
     <section className="flex flex-col justify-center items-center py-[5rem] lg:py-[7%] bg-center bg-cover bg-no-repeat " 
       style={{ backgroundImage: "url('./images/bg-spicies.avif')" }}>
@@ -10,6 +10,9 @@ function BannerTitle({title, menu}:
             <a href="./" className='hover:text-green-500'>Home</a>
             <i className="bi bi-arrow-right"></i>
             <b>{menu} </b>
+            <i className="bi bi-arrow-right"></i>
+            <b>{secondMenu} </b>
+
         </div>
     </section>
   )

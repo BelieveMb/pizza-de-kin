@@ -12,7 +12,7 @@ const HeaderBar = (
     return (
         <>
             {showSideBar ? <SideBar sideBarAction={sideBarAction} /> : null }
-            <header className='flex flex-row justify-between items-center'>
+            <header className='flex flex-row justify-between items-center text-gray-600'>
                 <div className='flex flex-row items-center gap-5 cursor-pointer'>
                     <span className="text-2xl" onClick={sideBarAction}>
                         <i className="bi bi-menu-app-fill"></i>
@@ -22,7 +22,7 @@ const HeaderBar = (
                         <span className="text-2xl text-green-800">
                             <i className="bi bi-telephone"></i>
                         </span>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col ">
                             <b>24/7 Support center</b>
                             <a href="tel:+243817723066" className='font-semibold text-red-700 text-xl'>+243 817723066</a>
                         </div>
@@ -40,9 +40,9 @@ const HeaderBar = (
                     />
                 </div>
 
-                {/* pour le header, nous devpns ajouteer la partie droite, les interactions et autres */}
+                {/* pour le header, nous devons ajouteer la partie droite, les interactions et autres */}
                 <div className='flex flex-row items-center gap-5 cursor-pointer'>
-                    <span className="hidden text-sm text-gray-50 lg:flex items-baseline hover:text-red-500" onClick={searchAction}>
+                    <span className="hidden text-sm text-gray-600 lg:flex items-baseline hover:text-red-500" onClick={searchAction}>
                         <i className="bi bi-search text-xl"></i> 
                         Recherche
                     </span>
@@ -51,10 +51,10 @@ const HeaderBar = (
                         Commander
                     </button>
                     <button className='bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold'>
-                    <i className="bi bi-basket2"></i> 
+                        <i className="bi bi-basket2"></i> 
                     </button>
-                    <button className='hidden lg:flex text-xl text-gray-50 font-semibold'>
-                    <i className="bi bi-ui-radios-grid"></i> 
+                    <button className='hidden lg:flex text-xl text-gray-600 font-semibold'>
+                        <i className="bi bi-ui-radios-grid"></i> 
                     </button>
 
                 </div>
@@ -114,14 +114,14 @@ const SideBar = ({sideBarAction}: {sideBarAction:any}) => {
                         <span>Menu </span>
                         <i className="bi bi-house text-2xl"></i>
                     </Link>
-                    <a href="./reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                    <Link href="./reservation" className='hover:text-red-500  text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
                         <span>Réservation </span>
                         <i className="bi bi-house text-2xl"></i>
-                    </a>
-                    <a href="#" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
-                        <span>Pages </span>
+                    </Link>
+                    <Link href="./shop" className='hover:text-red-500 hover:delay-700 text-gray-900 uppercase flex flex-row justify-between content-baseline items-center '>
+                        <span>Shop </span>
                         <i className="bi bi-house text-2xl"></i>
-                    </a>
+                    </Link>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link';
 
 function ProductCard({imageName, titleCard, detailCard, priceCard} :
     {imageName:string, titleCard:string, detailCard:string, priceCard:number}) {
@@ -16,7 +17,7 @@ function ProductCard({imageName, titleCard, detailCard, priceCard} :
         <div className="bg-gray-50 text-gray-700 rounded-xl px-5 py-4 
            h-auto -mt-36 pt-32 cursor-pointer ">
             <div className="flex justify-between">
-                <h3 className='text-xl font-semibold uppercase hover:text-green-600'>{titleCard} </h3>
+                <Link href="./shop/product"  className='text-xl font-semibold uppercase hover:text-green-600'>{titleCard} </Link >
                 <span className="text-2xl hover:text-red-700">
                     <i className="bi bi-heart"></i>
                 </span>
