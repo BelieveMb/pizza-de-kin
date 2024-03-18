@@ -11,8 +11,8 @@ function page({ params }: { params: { product: string } }) {
             <Header />
         </div>
         <BannerTitle title=' ' menu=' Shop' secondMenu='Pizza' />
-        <section className='flex flex-row gap-6 py-[8%] px-10 bg-gray-200 h-auto '>
-            <div>
+        <section className='flex flex-col lg:flex-row gap-6 py-[8%] px-10 bg-gray-200 h-auto '>
+            <div className=''>
                 <Image 
                     src={`/images/${imageName}`}
                     alt="pizza image"
@@ -21,8 +21,8 @@ function page({ params }: { params: { product: string } }) {
                     height={30}
                 /> 
             </div>
-            <div className="flex flex-col text-gray-700 gap-6">
-                <h1 className='title-font-regular text-2xl lg:text-[3.6rem] uppercase leading-snug lg:leading-none'>Pizza au fromage </h1>
+            <div className="flex flex-col text-gray-700 gap-2 lg:gap-6">
+                <h1 className='title-font-regular text-3xl lg:text-[3.6rem] uppercase leading-snug lg:leading-none'>Pizza au fromage </h1>
                 <div className="flex gap-4 text-yellow-400 border-b border-gray-400 pb-4">
                     <i className="bi bi-star-fill"></i>
                     <i className="bi bi-star-fill"></i>
@@ -30,7 +30,7 @@ function page({ params }: { params: { product: string } }) {
                     <i className="bi bi-star-fill"></i>
                     <i className="bi bi-star-fill"></i>
                 </div>
-                <p>
+                <p >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio?
                 </p>
                 <p className='text-red-500 font-semibold  text-3xl'>
@@ -49,7 +49,7 @@ function page({ params }: { params: { product: string } }) {
                         <b>1</b>
                         <b>+</b>
                     </div>
-                    <button className="bg-green-600 px-20 py-3 uppercase rounded-xl text-gray-50"> Add to cart</button>
+                    <button className="bg-green-600 px-5 lg:px-20 py-3 uppercase rounded-xl text-gray-50"> <i className="bi chart3"></i> Ajouter</button>
                     <span className="border border-gray-400 py-3 px-4 rounded-xl"> <i className="bi bi-heart"></i> </span>
 
 

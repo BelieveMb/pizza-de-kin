@@ -11,7 +11,7 @@ function Page() {
       <div className="bg-gray-400 px-10 py-5">
         <Header />
       </div>
-      <BannerTitle title='Le menu du restaurant' menu=' menu' />
+      <BannerTitle secondMenu=' ' title='Le menu du restaurant' menu=' menu' />
       <ListDish />
       <MenuPrice />
       <Footer />

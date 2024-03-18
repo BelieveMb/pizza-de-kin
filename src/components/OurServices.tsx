@@ -25,15 +25,15 @@ function OurServices() {
   return (
     <section className="flex flex-col lg:flex-row justify-center gap-10 items-center pb-20 " >
         <ServiceCard title='Repas qualité' 
-            contentPara='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam id natus nobis!' 
+            contentPara='Un accompagnement parfait pour compléter votre repas.'
             imgName='fastfood.svg'
         />
         <ServiceCard title='Plat spécial ' 
-            contentPara='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam id natus nobis!' 
+            contentPara='Un plat complet pour répondre à tous vos besoins.'
             imgName='pizza.svg'
         />
         <ServiceCard title='Livraison Rapide' 
-            contentPara='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam id natus nobis!' 
+            contentPara='Contactez nous pour une expédition rapide de votre repas.'
             imgName='delivery.png'
         />
         

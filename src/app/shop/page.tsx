@@ -31,7 +31,7 @@ const FiltrerDish = () => {
             <div className="flex flex-col ">
                 <h3 className='text-gray-800 text-2xl uppercase title-font-regular'>Categories</h3>
                 <ul className="flex flex-col gap-1 my-4 font-semibold text-gray-700">
-                    <CategoriesListItem iconItem='search' itemsName='Pizza' />
+                    <CategoriesListItem iconItem='flower1' itemsName='Burger' />
                     <CategoriesListItem iconItem='flower1' itemsName='Pizza' />
                 </ul>
             </div>
@@ -47,6 +47,9 @@ const FiltrerDish = () => {
                 <h3 className='text-gray-800 text-2xl uppercase title-font-regular'>Plat Spécial</h3>
                 <div className="flex flex-col gap-1 my-4 font-semibold text-gray-700">
                     <SpecialDishItem nameDish="King burgze" priceDish="75" imageDish="pizzaimg.png" />
+                    <SpecialDishItem nameDish="Pizza Xl" priceDish="15" imageDish="pizzaimg3.png" />
+                    <SpecialDishItem nameDish="Double Burger" priceDish="15" imageDish="pizzaimg.png" />
+                    <SpecialDishItem nameDish="Super Burger" priceDish="15" imageDish="pizzaimg.png" />
                 </div>
             </div>
         </aside>
@@ -60,33 +63,37 @@ function Page() {
             <Header />
         </div>
         <BannerTitle title='Shop' menu=' Shop' secondMenu=' ' />
-        <section className='flex flex-row gap-6 py-[8%] px-10 bg-gray-200 h-auto '>
-            <div className="w-[30%] ">
+        <section className='flex flex-row gap-6 py-[8%] px-2 lg:px-10 bg-gray-200 h-auto '>
+            <div className="w-[30%] lg:block hidden ">
                 <FiltrerDish />
             </div>
             <aside className="flex flex-col lg:flex-row justify-center lg:justify-start gap-4 my-6  px-10 ">
                 <ProductCard 
                     titleCard='Big Mac'
                     imageName='pizzaimg.png' 
-                    detailCard='contentText Lorem ipsum dolor sit amet consectetur'
-                    priceCard={50}
+                    detailCard="Craquez pour nos frites maison croustillantes et dorées. "
+                    priceCard={10}
                 /> 
                 <ProductCard 
-                    titleCard='Big Mac'
-                    imageName='pizzaimg.png' 
-                    detailCard='contentText Lorem ipsum dolor sit amet consectetur'
+                    titleCard='Pizza Xl'
+                    imageName='pizzaimg3.png' 
+                    detailCard='Un accompagnement parfait pour compléter votre repas.'
                     priceCard={15}
                 /> 
+                <div className="lg:hidden flex">
+
+                    <ProductCard 
+                        titleCard='Double burger'
+                        imageName='pizzaimg.png' 
+                        priceCard={20}
+                        detailCard='Un pur délice pour les amateurs de burgers.'
+                    /> 
+                </div>
+                
                 <ProductCard 
                     titleCard='Big Mac'
                     imageName='pizzaimg.png' 
-                    priceCard={20}
-                    detailCard='contentText Lorem ipsum dolor sit amet consectetur'
-                /> 
-                <ProductCard 
-                    titleCard='Big Mac'
-                    imageName='pizzaimg.png' 
-                    detailCard='contentText Lorem ipsum dolor sit amet consectetur'
+                    detailCard='Un accompagnement parfait pour compléter votre repas.'
                     priceCard={50}
                 />
 

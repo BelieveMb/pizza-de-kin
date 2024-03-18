@@ -12,7 +12,7 @@ const HeaderBar = (
     return (
         <>
             {showSideBar ? <SideBar sideBarAction={sideBarAction} /> : null }
-            <header className='flex flex-row justify-between items-center text-gray-600'>
+            <header className='flex flex-row justify-between items-center text-gray-50'>
                 <div className='flex flex-row items-center gap-5 cursor-pointer'>
                     <span className="text-2xl" onClick={sideBarAction}>
                         <i className="bi bi-menu-app-fill"></i>
@@ -42,14 +42,14 @@ const HeaderBar = (
 
                 {/* pour le header, nous devons ajouteer la partie droite, les interactions et autres */}
                 <div className='flex flex-row items-center gap-5 cursor-pointer'>
-                    <span className="hidden text-sm text-gray-600 lg:flex items-baseline hover:text-red-500" onClick={searchAction}>
+                    <span className="hidden text-sm text-gray-50 lg:flex items-baseline hover:text-red-500" onClick={searchAction}>
                         <i className="bi bi-search text-xl"></i> 
                         Recherche
                     </span>
-                    <button className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-green-700 duration-700 '>
+                    <Link href='./menu' className='hidden lg:flex gap-1 bg-red-500 rounded-lg px-4 py-3 text-gray-50 font-semibold  hover:bg-green-700 duration-700 '>
                         <i className="bi bi-cart4"></i> 
                         Commander
-                    </button>
+                    </Link>
                     <button className='bg-green-700 rounded-lg px-4 py-3 text-gray-50 font-semibold'>
                         <i className="bi bi-basket2"></i> 
                     </button>
